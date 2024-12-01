@@ -57,6 +57,7 @@ Developed by:Indhu Priya.T
 RegisterNumber: 24007533*/
 ```
 ```
+half_adder
 module half_adder(a,b,sum,carry);
 input a;
 input b;
@@ -65,17 +66,41 @@ assign sum=a^b;
 assign carry=a+b;
 endmodule
 ```
+```
+half_subtractor
+module hs(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
+```
+
+
+
+
+
+
 
 **RTL Schematic**
 
 # Half Adder
-![Screenshot 2024-11-19 211419](https://github.com/user-attachments/assets/e9aa700c-8768-4832-bbfd-a5fc0cc78ff3)
+![Screenshot (26)](https://github.com/user-attachments/assets/4c739b12-6353-436c-9cb1-238669aa4c69)
+
 
 # Half Substractor
+![Screenshot (28)](https://github.com/user-attachments/assets/a44ebcb6-ea07-486b-b122-e4a0cab94da6)
 
 
 
 
 **Output/TIMING Waveform**
+
+# Half Adder
+![Screenshot (27)](https://github.com/user-attachments/assets/670031b2-2e64-47fe-881b-7eb4894ea3b5)
+
+# Half Substractor
+![Screenshot (29)](https://github.com/user-attachments/assets/e4e573cf-9d0a-485b-a426-9a4699b0729c)
+
 
 **Result:**
